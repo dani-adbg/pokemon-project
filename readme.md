@@ -36,3 +36,4 @@ El proceso de instalación es algo largo y tardado, aquí dejaré links en el qu
 >En el caso de que se salte un paso del video es posible que hayan fallos y que no funcione, recomendamos ver el video entero y seguirlo al pie de la letra.
 ___ 
 Con todo esto ya podemos empezar a desarrollar nuestro pequeño proyecto. :)
+[Siguiente parte](https://github.com/dani-adbg/pokemon-project/tree/2.-Base-del-Proyecto)
