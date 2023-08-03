@@ -1,6 +1,8 @@
 # Pokemon Project
 Este pequeño proyecto fue creado para presentarlo en la escuela.
 Se estará documentando el proceso de creación en las diferentes ramas de github.
+
+[Preparación del Entorno](https://github.com/dani-adbg/pokemon-project/tree/1.-Preparacion-de-Entorno#preparaci%C3%B3n-del-entorno)
 ___
 ![img](https://media.discordapp.net/attachments/1102771348603940946/1136477504606064690/Captura_de_pantalla_2023-08-02_204810.png?width=885&height=498) 
 
