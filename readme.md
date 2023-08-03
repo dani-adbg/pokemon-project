@@ -1,37 +1,38 @@
-# Pokemon Project
-Este pequeño proyecto fue creado para presentarlo en la escuela.
-Se estará documentando el proceso de creación en las diferentes ramas de github.
+# Preparación del Entorno
+
+Debemos saber que C++ no viene incluido en nuestra PC, por lo que debemos instalarlo y para ello usaremos ***Visual Studio Code*** junto a la herramienta ***g++***.
 ___
-![img](https://media.discordapp.net/attachments/1102771348603940946/1136477504606064690/Captura_de_pantalla_2023-08-02_204810.png?width=885&height=498) 
+## Instalación de VSC
+Visual Studio Code es un editor de código que nos permitirá desarrollar nuestro proyecto.
 
-Los ***menús*** a lo largo del proyecto son controlados con las ***flechas*** del teclado y la tecla ***ENTER***.
-___
-## Información
-![info-select-img](https://media.discordapp.net/attachments/1102771348603940946/1136483861442854972/image.png?width=885&height=498)
+Para Instalarlo debemos ir a la [Página Web de VSC](https://code.visualstudio.com/) para poder descargarlo.
 
-Al dar ENTER sobre la opción ***Información*** irá al menú de selección de *Pokemón* para seleccionar el *Pokemón* del que queramos saber la información.
+![img](https://media.discordapp.net/attachments/1102771348603940946/1136477504933212230/Captura_de_pantalla_2023-08-02_203802.png?width=885&height=498)
 
-![info-img](https://media.discordapp.net/attachments/1102771348603940946/1136483861761626234/image.png?width=885&height=498)
-
-Al seleccionar el *Pokemón* nos mostrará su información general, sus estadísticas, junto a sus movimientos y una imagen del *Pokemón* en arte **ASCII**.
-___
-## Batalla
-![select-img](https://media.discordapp.net/attachments/1102771348603940946/1136480642075463762/image.png?width=885&height=498)
-
-Al igual que en la opción ***Información*** se abrirá el menú para seleccionar *Pokemón* pero esta vez será dos veces, pues selccionarás tu *Pokemón* y el *Pokemón* rival.
-
-![stats-img](https://media.discordapp.net/attachments/1102771348603940946/1136480642452963368/image.png?width=885&height=498)
-
-Al seleccionar ambos *Pokemones* se mostrará su información y luego la imagen correspondiente.
-
-![img-img](https://media.discordapp.net/attachments/1102771348603940946/1136480642712993913/image.png?width=885&height=498)
-
-Empieza la batalla que también estará basada en un menú de flechas, el cuál contendrá 4 movimientos básicos de cada Pokemón y dependiendo del ataque se calculará el daño y se aplicará al Pokemón contrario. 
-
-![battle-img](https://media.discordapp.net/attachments/1102771348603940946/1136480643006599288/image.png?width=885&height=498)
-
-Por último se mostrará el Pokemón ganador y así se concluye el pequeño proyecto.
+Una vez descargado, seguirémos los pasos de instalación que nos proporcionará y listo.
 
 ___
+## Configuración VSC para C++
+Hasta ahora solo hemos descargado el editor de código, por lo que ahora deberemos implementar C++.
 
-Ya tuve suficiente creando esta cosa y encima me toca documentarla. 😢
+Para esto, una vez abierto VSC debemos entrar a la pestaña de ***Extensiones***.
+
+![img](https://media.discordapp.net/attachments/1102771348603940946/1136495544907337808/image.png?width=885&height=498)
+
+Ahora en el buscador pondremos **C++** y nos debe salir esto, le daremos a instalar.
+
+![img](https://media.discordapp.net/attachments/1102771348603940946/1136496088975671366/image.png?width=885&height=498)
+
+Una vez configurado el editor de código, instalaremos C++ en nuestra computadora.
+
+___ 
+## Implementación de C++ a nuestra computadora
+El proceso de instalación es algo largo y tardado, aquí dejaré links en el que expliquen de manera detallada como es la instalación de la herramienta ***MinGW***
+
+[Guía de instalación por VSC](https://code.visualstudio.com/docs/languages/cpp#_example-install-mingwx64)
+
+[Video que explica la instalación](https://www.youtube.com/watch?v=v3ENcQpoA5A&t=750s&ab_channel=FaztCode)
+
+>En el caso de que se salte un paso del video es posible que hayan fallos y que no funcione, recomendamos ver el video entero y seguirlo al pie de la letra.
+___ 
+Con todo esto ya podemos empezar a desarrollar nuestro pequeño proyecto. :)
