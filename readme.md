@@ -1,39 +1,47 @@
-# Pokemon Project
-Este pequeño proyecto fue creado para presentarlo en la escuela.
-Se estará documentando el proceso de creación en las diferentes ramas de github.
+# Organización de funciones
 
-[Preparación del Entorno](https://github.com/dani-adbg/pokemon-project/tree/1.-Preparacion-de-Entorno#preparaci%C3%B3n-del-entorno)
-___
-![img](https://media.discordapp.net/attachments/1102771348603940946/1136477504606064690/Captura_de_pantalla_2023-08-02_204810.png?width=885&height=498) 
-
-Los ***menús*** a lo largo del proyecto son controlados con las ***flechas*** del teclado y la tecla ***ENTER***.
-___
-## Información
-![info-select-img](https://media.discordapp.net/attachments/1102771348603940946/1136483861442854972/image.png?width=885&height=498)
-
-Al dar ENTER sobre la opción ***Información*** irá al menú de selección de *Pokemón* para seleccionar el *Pokemón* del que queramos saber la información.
-
-![info-img](https://media.discordapp.net/attachments/1102771348603940946/1136483861761626234/image.png?width=885&height=498)
-
-Al seleccionar el *Pokemón* nos mostrará su información general, sus estadísticas, junto a sus movimientos y una imagen del *Pokemón* en arte **ASCII**.
-___
-## Batalla
-![select-img](https://media.discordapp.net/attachments/1102771348603940946/1136480642075463762/image.png?width=885&height=498)
-
-Al igual que en la opción ***Información*** se abrirá el menú para seleccionar *Pokemón* pero esta vez será dos veces, pues selccionarás tu *Pokemón* y el *Pokemón* rival.
-
-![stats-img](https://media.discordapp.net/attachments/1102771348603940946/1136480642452963368/image.png?width=885&height=498)
-
-Al seleccionar ambos *Pokemones* se mostrará su información y luego la imagen correspondiente.
-
-![img-img](https://media.discordapp.net/attachments/1102771348603940946/1136480642712993913/image.png?width=885&height=498)
-
-Empieza la batalla que también estará basada en un menú de flechas, el cuál contendrá 4 movimientos básicos de cada Pokemón y dependiendo del ataque se calculará el daño y se aplicará al Pokemón contrario. 
-
-![battle-img](https://media.discordapp.net/attachments/1102771348603940946/1136480643006599288/image.png?width=885&height=498)
-
-Por último se mostrará el Pokemón ganador y así se concluye el pequeño proyecto.
+En esta parte organizaremos un poco nuestro código, separándolo en funciones para evitar redundancia, acortándolo y haciéndolo un poco más eficiente.
 
 ___
+#### Librerías
+Las librerías que agregaremos son para una función que nos servirá para que calcule el tiempo.
 
-Ya tuve suficiente creando esta cosa y encima me toca documentarla. 😢
+![](https://media.discordapp.net/attachments/1102771348603940946/1137831893799292978/image.png?width=363&height=101)
+
+___
+#### Función para calcular el tiempo
+Esta función a la que nombraremos ***sleep***, le pasaremos un parámetro de tipo entero que serán los segundos que calculará. 
+
+![](https://media.discordapp.net/attachments/1102771348603940946/1137831986430476410/image.png?width=602&height=114)
+
+El parámetro de tipo entero con nombre ***sec*** lo multiplicaremos por *1000* y lo guardarémos en una variable también de tipo entero con el nombre ***milliseconds*** para que nos de un resultado en milisegundos.
+En la siguiente línea usaremos funciones que nos proporcionan las librerías ***thread*** y ***chrono*** en la que le pasaremos el parámetro milliseconds.
+___
+### Separar el código en funciones para mayor organización
+Ahora el código que antes teníamos en la función ***main*** de nuestro programa, lo separaremos en dos funciones más, esto nos servirá para implementar nuevas funciones luego sin repetir código de manera poco eficiente.
+
+#### Mostrar los datos del Pokemon
+Primera función que separaremos del código en ***main***. Esta función la nombraremos ***showData***.
+
+![](https://media.discordapp.net/attachments/1102771348603940946/1137832036078469191/image.png?width=636&height=396)
+
+Aquí le pasarémos el parámetro *pokemon* para obtener sus datos.
+También estarémos usando la función ***sleep*** creada anteriormente, usando un ciclo for que por cada vez que se repita, imprimirá un punto y luego esperará 1 segundo.
+
+#### Seleccionar Pokemon
+A esta función le llamaremos ***selectPokemon***. 
+
+![](https://media.discordapp.net/attachments/1102771348603940946/1137832110267306114/image.png?width=563&height=466)
+
+Aquí solo transcribiremos el código que escribimos en el avance anterior, con la diferencia de que no mostrarémos los datos directamente y que retornaremos este pokemon.
+
+___
+#### Función Main 
+Como dividimos el código en varias funciones más, nuestra función ***main*** cambiará.
+
+![](https://media.discordapp.net/attachments/1102771348603940946/1137832140646666370/image.png?width=508&height=181)
+
+En vez de escribir todo el código, llamarémos la función ***selectPokemon*** y la guardarémos en la constante con nombre ***pokemon*** con base a la clase ***Pokemon***.
+Luego llamaremos la función ***showData*** y le pasarémos el parámetro ***pokemon*** que recolectamos de la función ***selectPokemon***.
+___
+Con esto podemos seguir al [siguiente avance](https://github.com/dani-adbg/pokemon-project/tree/4.-Movimientos-y-Pokemon-Rival)
